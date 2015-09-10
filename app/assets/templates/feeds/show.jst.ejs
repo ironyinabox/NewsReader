@@ -1,0 +1,7 @@
+<h2><%= model.escape('title')%></h2>
+
+<% model.entries().forEach(function(entry){ %>
+  <li><%=entry.escape('title')%></li>
+<% }) %>
+
+<input type="button" onClick="history.go(0)" value="Refresh">
